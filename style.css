@@ -1,0 +1,363 @@
+ @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+     scroll-behavior: smooth;
+     font-family: 'Poppins', sans-serif;
+ }
+
+
+
+ body {
+     background: #181616;
+     color: #fff;
+ }
+
+ header{
+     display:flex ;
+     justify-content:space-between ;
+     padding: 20px;
+     align-items: center;
+ }
+ /* header {
+     position: fixed;
+     width: 100%;
+     top: 0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background:#181616;
+     padding: 22px 15%;
+     border-bottom: 1px solid transparent;
+     transition: all .45s ease;
+
+ } */
+
+.logo {
+     color: #fff;
+     font-size: 35px;
+     font-weight: 700;
+     letter-spacing: 17px;
+ }
+
+ span {
+     color: #05b4ff;
+ }
+
+ .navlist {
+     display: flex;
+     margin-left: 11px;
+ }
+ 
+
+ .navlist a {
+     color: #ccc;
+     font-size: 17px;
+     font-weight: 500;
+     margin: 0 25px;
+     transition: all .45s ease;
+ }
+
+ .navlist a:hover {
+     color: #05b4ff;
+ }
+
+ .navlist a.active {
+     color: #05b4ff;
+ }
+
+ #menu-icon {
+     font-size: 35px;
+     color: var(--text-color);
+     z-index: 1000;
+     cursor: pointer;
+     margin-left: 25px;
+     display: none;
+ }
+
+ section {
+     padding: 160px 15% 120px;
+ }
+
+ .home {
+     position: relative;
+     height: 100vh;
+     width: 100%;
+     background-image: url(/img/bg.jpg);
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+ }
+
+ .slide {
+     margin-bottom: 20px;
+ }
+
+ .one {
+     display: inline-block;
+     margin-right: 15px;
+     padding: 0 15px;
+     line-height: 32px;
+     font-size: 20px;
+     font-weight: 500;
+     border-radius: 5px;
+     background: #05b4ff;
+     color: #fff;
+ }
+
+ .two {
+     display: inline-block;
+     color: #ccc;
+     font-size: 20px;
+     font-weight: 500;
+
+ }
+
+ .home-text h1 {
+     font-size: 5rem;
+     font-weight: 700;
+     color: #fff;
+     line-height: 1.1;
+     margin: 0 0 8px;
+ }
+
+ .home-text p {
+     color: #ccc;
+     font-size: 1.1rem;
+     line-height: 1.8;
+     margin-bottom: 40px;
+ }
+
+ .button {
+     display: inline-block;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .btn {
+     display: inline-block;
+     padding: 12px;
+     background: #05b4ff;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 1rem;
+     letter-spacing: 1px;
+     font-weight: 500;
+     transition: all .45s ease;
+ }
+
+ .btn:hover {
+     transform: scale(0.9);
+ }
+
+ .about {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     gap: 1.5rem;
+ }
+
+ .about-img img {
+     max-width: 530px;
+     height: auto;
+     width: 100%;
+     border-radius: 5px;
+     margin-top: -95px;
+ }
+
+ .about-text{
+    margin-left: 60px;
+    margin-top: -155px;
+ }
+ .about-text h2 {
+     font-size: 3rem;
+     line-height: 1;
+ }
+
+ .about-text h4 {
+     font-size: 24px;
+     font-weight: 600;
+     color: #fff;
+     line-height: 1.7;
+     margin: 15px 0 30px;
+     
+ }
+
+ .about-text p {
+     color: #ccc;
+     font-size: 1.1rem;
+     font-family: 'Times New Roman', Times, serif;
+     line-height: 1.8;
+     margin-bottom: 4rem;
+ }
+ .skill{
+    background: #1a1919;
+
+ }
+ .main-text{
+    text-align: center;
+    margin-top: -58px;
+ }
+ .main-text p{
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 15px;
+ }
+
+ .main-text h2{
+    font-size: 3rem;
+    line-height: 1;
+ }
+
+ .skill-content {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+     align-items: center;
+     gap: 2.5rem;
+     margin-top: 5rem;
+ }
+ .box{
+    background: #2a2a2a;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+ }
+ .s-icons i{
+    font-size: 32px;
+margin-bottom: 20px;
+ }
+ .box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+ }
+ .box p{
+color: #ccc;
+font-size: 1rem;
+line-height: 1.8;
+margin-bottom: 25px;
+ }
+.box:hover{
+transform: translateY(-8px);
+cursor: pointer;
+}
+
+.projects{
+    background: #181616;
+ }
+ .main2-text{
+    text-align: center;
+    margin-top: -58px;
+ }
+ .main2-text p{
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 15px;
+ }
+
+ .main2-text h2{
+    font-size: 3rem;
+    line-height: 1;
+ }
+
+ .projects-content {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+     align-items: center;
+     gap: 2.5rem;
+     margin-top: 5rem;
+ }
+ .box2{
+    background: #2a2a2a;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+ }
+ .s-icon i{
+    font-size: 32px;
+margin-bottom: 20px;
+ }
+ .box2 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+ }
+ .box2 p{
+color: #ccc;
+font-size: 1rem;
+line-height: 1.8;
+margin-bottom: 25px;
+ }
+.box2 :hover{
+transform: translateY(-8px);
+cursor: pointer;
+}
+.contact{
+background: #1c1919;
+/* display: grid; */
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 2.5rem;
+}
+.contact-text h4{
+    color: #fff;
+margin: 50px 0;
+font-size: 20px;
+font-weight: 600;
+}
+.contact-text h2{
+    font-size: 3rem;
+line-height: 1;
+}
+.contact-text p{
+    color: #ccc;
+    font-size: 1.1rem;
+line-height: 1.8;
+margin-bottom: 30px;
+}
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+color: #ccc;
+font-size: 14px;
+transition: all .45s ease;
+
+}
+.list li a :hover{
+color: #fff;
+transform: translateY(5px);
+}
+.contact-icons i{
+height: 45px;
+width: 45px;
+color:#fff;
+font-size: 22px;
+display: inline-block;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+margin-right: 15px;
+transition: all .45s ease;
+}
+.contact-icons i:hover{
+   color:#05b4ff;
+}
+.contact-text{
+    margin-left: -100px;
+    
+}
